@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Materialize</title>
+
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="css/materialize.css" rel="stylesheet">
+	<link href="css/estilo.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	<link  href="node_modules/cropperjs/dist/cropper.css" rel="stylesheet">
+	
+</head>
+<body>
+	<nav>
+	    <div class="nav-wrapper brown darken-2">
+      		<a href="#" class="brand-logo">
+      			Dilmãe
+      		</a>
+      		<ul id="nav-mobile" class="right hide-on-med-and-down">
+	        	<li><a href="sass.html">Sass</a></li>
+	        	<li><a href="badges.html">Components</a></li>
+	        	<li><a href="collapsible.html">JavaScript</a></li>
+	      	</ul>
+	    </div>
+	</nav>
+
+	<div class="container " >
+		<h1 class="header col s12 light" >Teste</h1>
+		<div class="divider"></div>
+
+		<div class="section">
+			<div class="row">
+				<div class="col l4">
+					<img src="imagens/andressa.jpeg" class="responsive-img z-depth-1 scale-transition" />
+					<div><img src="imagens/andressa.jpeg" crossOrigin="Anonymous" class="responsive-img z-depth-1 scale-transition" id="crop" /></div>
+
+					<br />
+
+
+					<div id="preview" ></div>
+
+
+					
+					<div class="borda-personalizada" >
+						<div class="borda-caixa">
+							<div class="borda-exterior">
+								<div class="borda-interior"></div>
+						 	</div>
+						 	<div class="borda-exterior">
+								<div class="borda-interior"></div>
+						 	</div>
+						 	<div class="borda-exterior">
+								<div class="borda-interior"></div>
+						 	</div>
+
+						</div>
+						<div class="borda-caixa" style="position: relative; top: -1px;border: #fff solid 1px;">
+							<div class="borda-exterior">
+								<div class="borda-interior"></div>
+						 	</div>
+						 	<div class="borda-exterior">
+								<div class="borda-interior"></div>
+						 	</div>
+						 	<div class="borda-exterior">
+								<div class="borda-interior"></div>
+						 	</div>
+
+						</div>
+					</div>
+
+					<a id="cortar" class="btn btn-small waves-effect waves-light brown darken-2">Crop</a>
+					
+
+				  <!-- Modal Structure -->
+				  <div id="modal1" class="modal">
+				    <div class="modal-content">
+				      <p id="imagemCortada"></p>
+				    </div>
+				  </div>
+
+				</div>
+				
+
+				<div class="col l8">
+					<div class="card brown darken-2 hoverable">
+						<div class="card-image">
+				          <img src="imagens/roses.jpg">
+				          <span class="card-title right-align"></span>
+				          <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+				        </div>
+						<div class="card-content white-text">
+							<span class="card-title">Card Título</span>
+							<p>Todos as descrições das pessoas são sobre a humanidade do atendimento, a pessoa pega no pulso, examina, olha com carinho. Então eu acho que vai ter outra coisa, que os médicos cubanos trouxeram pro brasil, um alto grau de humanidade.</p>
+						</div>
+						<div class="card-content ">
+					        <div class="chip red darken-4 white-text">
+					        	<img src="imagens/chainsmokers.jpg" class="">
+								Chainsmokers
+							</div>
+						</div>
+						<div class="card-action ">
+				          <a href="#">This is a link</a>
+				          <a href="#">This is a link</a>
+				        </div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<div class="parallax-container">
+	  <div class="parallax"><img src="imagens/dilma-paralax.jpg"></div>
+	</div>
+	<br />
+
+	<div class="container">
+		<div class="row">
+			<div class="col l4">
+				<div class="card-panel indigo darken-1">
+					<p class="white-text">A única área que eu acho, que vai exigir muita atenção nossa, e aí eu já aventei a hipótese de até criar um ministério. É na área de... Na área... Eu diria assim, como uma espécie de analogia com o que acontece na área agrícola.</p>
+				</div>
+
+			</div>
+
+			<div class="col l8">
+				<ul class="collection">
+				    <li class="collection-item avatar">
+				      <img src="imagens/dilma.jpg" alt="" class="circle">
+				      <span class="title">Dilmãe</span>
+				      <p>No meu xinélo da humildade eu gostaria muito de ver o Neymar e o Ganso. Por que eu acho que.... 11 entre 10 brasileiros gostariam. Você veja, eu já vi, parei de ver. Voltei a ver, e acho que o Neymar e o Ganso têm essa capacidade de fazer a gente olhar.</p>
+				       <a onclick="M.toast({html: 'Oi, eu sou a Dilma'})" class="btn btn-small waves-effect waves-light brown darken-2">Oi</a>
+				  	</li>
+				  	<li class="collection-item avatar">
+				      <img src="imagens/dilma2.jpg" alt="" class="circle">
+				      <span class="title">Dilmãe</span>
+				      <p>Todos as descrições das pessoas são sobre a humanidade do atendimento, a pessoa pega no pulso, examina, olha com carinho. Então eu acho que vai ter outra coisa, que os médicos cubanos trouxeram pro brasil, um alto grau de humanidade.</p>
+				  	</li>
+				</ul>
+			</div>
+		</div>
+
+		<p class="flow-text">TEste de paragrafo</p>
+	</div>
+
+		
+		
+
+	
+
+	<footer class="page-footer brown darken-2">
+  		<div class="container">
+        	<div class="row">
+        		<div class="col l6 s12">
+        			<h5 class="white-text">Links</h5>
+	                <ul>
+	                  <li><a class="grey-text text-lighten-3" href="#!">Link 1  <i class="tiny material-icons">brush</i></a></li>
+	                  <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+	                  <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+	                  <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+	                </ul>
+        		</div>
+        	</div>
+        </div>
+        <div class="footer-copyright brown darken-3">
+        	<div class="container">
+            	© 2014 Copyright Text
+            	<a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            </div>
+      	</div>
+    </footer>
+
+
+
+	<!--  Scripts-->
+	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script src="js/materialize.js"></script>
+	<script src="node_modules/cropperjs/dist/cropper.js"></script>
+	<script src="js/script.js"></script>
+
+</body>
+</html>
